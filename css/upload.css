@@ -1,0 +1,64 @@
+/* 
+    Created on : Feb 1, 2015, 7:08:49 PM
+    Author     : TOHIR
+*/
+
+#import-map {
+        width: inherit;
+        max-width: 1400px;
+    }
+    
+    #import-map th.map-activecol {
+        border-top-color: #52bad5;
+    }
+    
+    #import-map .map-activecol {
+        border-color: #52bad5;
+        border-bottom: none;
+        color: #333;
+        text-align: left;
+    }
+    
+    #import-map th {
+        height: 130px;
+        /*min-width: 250px;*/
+        text-align: middle;
+        vertical-align: middle;
+        border-top: 2px solid #d0d0d0;
+    }
+    
+    #import-map td, #import-map th {
+        /*padding: 6px 10px;*/
+        font-size: 13px;
+        border-left: 2px solid #d0d0d0;
+        border-right: 2px solid #d0d0d0;
+    }
+    
+    #import-map .map-activecol {
+        border-color: #52bad5;
+        border-bottom: none;
+        color: #333;
+        text-align: left;
+    }
+    
+    .box_enabled .pagination ul>li>a{
+       
+        background-color:  #1e74c5;
+    }
+    
+    .box_disabled .pagination ul>li>a{
+        background-color:  #red;
+    }
+    
+    .pagination {
+        margin: 10px 0;
+        }
+    .pagination ul>li, .pagination ul>li>span {
+    float: left;
+    padding: 4px 12px;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-left-width: 0;
+    }

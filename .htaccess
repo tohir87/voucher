@@ -1,0 +1,23 @@
+RewriteEngine on
+
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+
+RewriteRule ^(api/*) /$1 [env=API:true]
+Header set Access-Control-Allow-Origin * env=REDIRECT_API
+Header set Access-Control-Allow-Methods POST,GET,OPTIONS env=REDIRECT_API
+Header set Access-Control-Allow-Headers X-Authorization,X-Requested-With,Authorization,Token,Content-Type,App-Key,Content-Length env=REDIRECT_API
+Header set Access-Control-Allow-Credentials true env=REDIRECT_API
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|images|home|img|assets|css|font|js|cal|sass|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
+<files ~ "\.(tpl|log|error_log|phar)$">
+    order deny,allow
+    allow from none
+    deny from all
+</files>
+
+Options +FollowSymlinks -Indexes

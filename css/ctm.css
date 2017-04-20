@@ -1,0 +1,183 @@
+/* CSSTidy 1.5.2: Thu, 19 Mar 2015 17:26:01 +0000 */.dashboard_icon a span{text-align:center!important}
+.bg-grey{background-color:#E1E1E1}
+.bg-grey2{background-color:#EEE}
+.bg_good{color:#468847;background-color:#dff0d8}
+.bg_alert{color:#b94a48;background-color:#f2dede}
+.text_alert{color:#b94a48}
+.text_success{color:#468847}
+td.align-right{text-align:right}
+.text-right{text-align:right}
+.align-center{text-align:center;padding:10px}
+.loader{text-align:center;margin-bottom:20px}
+.loaderBox{padding:100px 0;text-align:center}
+.processing{background-color:#CCC;padding:3px 20px;border:1px solid #333;display:inline-block}
+.loading{padding:50px 0;text-align:center}
+.margin{margin:10px 0}
+.margin_bottom{margin-bottom:40px}
+#modal-1{width:60%;position:fixed;top:10%;left:20%;margin-left:0}
+#modal-1a{width:70%;position:fixed;top:10%;left:15%;margin-left:0}
+.box .box-content-padless{padding:0;background:#fff}
+.box.box-bordered .box-content-padless{border:2px solid #ddd;border-top:0}
+.control-label2{width:300px;text-align:left}
+.controls2{margin-left:370px}
+.border-error{border-color:#b94a48;color:#b94a48}
+.border-success{background-color:#468847;color:#468847}
+.border-left{border-left:1px solid #CCC}
+.padless{padding:0}
+.pad-1{padding:10px}
+.pad-2{padding:10px 0}
+.pad-3{padding:30px 10px}
+tr.tdhead{font-weight:700;background-color:#333}
+.list-div{padding:10px;border-bottom:1px solid #EEE}
+.list{margin:0;list-style-type:none}
+.list li{padding:10px;border-bottom:1px solid #EEE}
+.list li:hover{background-color:#EEE}
+.list li a{color:#222;text-decoration:none}
+.list2{margin:0;list-style-type:none}
+.list2 li{padding:10px;border-bottom:1px solid #EEE}
+.list2 li a{text-decoration:none}
+.border_light_grey{border:1px solid #f4f4f4}
+.stripe{background-color:#f4f4f4;padding:10px}
+.boxCenter{text-align:center;padding:80px 0}
+.merror{color:#b94a48;font-style:italic}
+.allowance{font-style:italic;color:#999}
+.imgBox{width:120px;height:120px;padding:10px}
+.imgBox2{width:80px;height:80px;padding:10px}
+.imgBox img,.imgBox2 img{width:100%;margin:0 auto;display:block}
+.remove_button_css{outline:none;padding:5px;border:0;box-sizing:none;background-color:transparent}
+.buttonBox{padding:20px 0;margin-top:20px;border-top:1px solid #EFEFEF}
+.edit_holiday_modal{min-height:300px}
+.borderline{margin-top:30px;border:1px solid #CCC;padding:30px}
+.borderline-white{margin-top:30px;border:1px solid #FFF;padding:30px}
+.borderline > h2{font-weight:400;text-align:center;text-transform:uppercase;margin-bottom:40px}
+.borderline > h4{font-weight:400;text-align:center;text-decoration:underline;text-transform:uppercase}
+.borderline > ul{margin:20px 0;padding:0;list-style:none}
+.borderline > div{padding:20px 0}
+.bg_lightgrey{background-color:#F9F9F9}
+.error{color:#B94A48}
+#content{height:auto!important;
+         display:block!important;
+         /*min-height:800px!important*/
+}
+#main {
+    background: #fff;
+    margin-left: 0px;
+    padding-bottom: 30px;
+}
+.marginless_bottom{margin-bottom:0}
+.light-title{font-weight:400;padding:40px 0 15px;margin-bottom:25px;border-bottom:1px solid #EEE}
+.light-title2{font-weight:400;padding:40px 0 15px;margin-bottom:15px}
+.space-text{padding:0 10px;display:inline-block;float:right}
+.bwrap{position:relative}
+.confirm_delete{display:none;position:absolute;top:0;left:0;z-index:1000;color:#b94a48;background-color:#f2dede;border:1px solid #eed3d7;padding:5px;width:400px}
+.iwrap{display:none}
+.shop-items > li:hover {
+  /*background: #368ee0;*/
+  background: #fff;
+}
+
+.shop-items, .thumbnails, .colors { list-style-type: none; margin: 0; padding: 0;}
+.shop-items > li .product { position: relative; }
+.shop-items > li .product:hover { background: #368ee0; }
+.shop-items > li .product > a .details .price { text-align: right; font-size: 18px; margin-right: 10px}
+.shop-items > li .product > a .details .name { display: block; font-size: 16px; color: #333; margin-left: 5px }
+.shop-items > li .product:hover > a .details { color: #fff;}
+.shop-items > li .product:hover > a .details .name { color: #fff;}
+/*.shop-items{width:31%;float:left;margin-left:1%;margin-right:1%;margin-bottom:2%;border:1px solid #EEE;overflow:hidden;-webkit-box-shadow:0 0 8px 0 rgba(50,50,50,0.30);-moz-box-shadow:0 0 8px 0 rgba(50,50,50,0.30);box-shadow:0 0 8px 0 rgba(50,50,50,0.30)}
+.shop-items:hover{border:1px solid #CCC}
+.shop-items>.pimg{width:100%;border-bottom:1px solid #EEE;overflow:hidden;height:250px}
+.shop-items>.pimg> img{height:100%}
+.shop-items>.details > ul{list-style-type:none;margin:0}
+.shop-items>.details > ul > li{border-bottom:1px solid #EEE;padding:10px}
+.shop-items>.details > ul > li > h4{font-weight:400;padding:10px 5px;margin-bottom:10px}
+.shop-items>.details > ul > li.partner{font-size:12px;color:#CCC;font-style:italic} */
+h1 > .popover{left:480px}
+h1 > .popover > .popover-content{font-size:14px}
+.progress-modified{margin-bottom:4px;background-color:#EEE;position:relative}
+.progress-modified > span{padding:0 10px;font-weight:700;display:inline-block;position:absolute;right:0;top:0}
+.goal_link{display:inline-block;float:right}
+.cal2{display:inline-block;padding:3px 0;width:19px;font-size:12px;text-align:center;margin-right:1px;border:1px solid #BBB}
+.cal{display:inline-block;padding:3px 0;width:21px;font-size:12px;text-align:center;margin-right:1px;border:1px solid #BBB}
+.bg_orange{background-color:#FF8000;color:#FFF;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px}
+.plan_wrap{display:inline-block;cursor:pointer}
+.popper-content{background-color:#FFF;border-radius:5px;border:1px solid #EEE;-webkit-box-shadow:0 1px 14px 0 rgba(50,51,51,0.74);-moz-box-shadow:0 1px 14px 0 rgba(50,51,51,0.74);box-shadow:0 1px 14px 0 rgba(50,51,51,0.74);overflow:hidden}
+.body_op{background-color:#e3e3e3;opacity:.5}
+.bg_green{background-color:#0B6121;color:#FFF;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px}
+.bg_red{background-color:red;color:#FFF;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px}
+.percent-over{color:red;font-weight:700}
+.payment-logo{max-width:200px}
+.payment-method .icheckbox_square-blue,.payment-method .iradio_square-blue,.payment-method label{display:inline-block}
+#organogram_content{overflow:auto}
+#organogram_content .organogramLabel{background:transparent;text-align:center;border:solid 1px #368ee0;border-radius:5px;padding:5px;height:35px}
+#organogram_content .organogramLabel.withChild{margin-left:10px}
+#organogram_content h3.organogramLabelTitle,#organogram_content h4.organogramLabelSubtitle{font-size:.9em;margin:0;line-height:normal;white-space:nowrap;text-overflow:ellipsis}
+#organogram_content h4.organogramLabelSubtitle{font-size:.8em;font-weight:400}
+#organogram_content .node{cursor:pointer}
+#organogram_content .node circle{fill:#fff;stroke:#4682b4;stroke-width:1.5px}
+#organogram_content .node text{font:10px sans-serif}
+#organogram_content .link{fill:none;stroke:#ccc;stroke-width:1.5px}
+.nav-pills>li>a{background-color:#fffafa}
+.attachment-row,.attachment-row2,.stageslist{border-top:solid 1px #ccc;padding:7px 0}
+.attachment-rows{border-bottom:solid 1px #ccc;padding:7px 0}
+.job_credit_balance{text-align:center;font-size:1.3em;padding-bottom:5px;border-bottom:solid 1px #ccc}
+.tright,.table td.tright,.table th.tright{text-align:right}
+.tleft{text-align:left}
+.receipt-container{width:768px;max-width:100%;margin:20px auto}
+.dtTable select{margin:0;font-size:.9em}
+#bpopupModal{background-color:#fff;box-shadow:0 0 25px 5px #999;color:#111;display:none;min-width:450px;padding:10px; height: auto; width: auto; max-height: 95%; max-width: 80%;}
+#bpopupModal .logo{color:#2b91af;font:bold 325% Petrona,sans}
+#bpopupModal{min-height:250px}
+#bpopupModal iframe{background:url(../img/loader.gif) center center no-repeat;min-height:240px;min-width:450px}
+#bpopupModal .loading{background:url(../img/loader.gif) center center no-repeat}
+#bpopupModal p{font:500% Petrona,sans-serif;padding:45px 0 0;text-align:center}
+#bpopupModal a{left:175px;position:absolute;top:175px}
+.lt-ie9 .bModal{background-color:#000}
+#bpopupModal .button{background-color:#2b91af;border-radius:10px;box-shadow:0 2px 3px rgba(0,0,0,0.3);color:#fff;cursor:pointer;display:inline-block;padding:10px 20px;text-align:center;text-decoration:none}
+#bpopupModal .button.b-close{border-radius:7px 7px 7px 7px;box-shadow:none;font:bold 131% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px}
+#bpopupModal .b-iframe {width: 100%; height: auto; min-height: 90%; overflow: auto;}
+#bpopupModal .popup-content {height: 100%; overflow-x: auto;}
+.row-fluid [class*="span"].noLeftMargin {margin-left: 0;}
+.checklist_item_title  {margin: 0; font-size: 1.1em; line-height: normal;}
+.modal-full>.modal-body, .modal-full>form>.modal-body {max-height:460px; overflow-y:scroll;}
+/*.modal-body {max-height: 100% !important;}*/
+.well.error {border-color: #ff3333;}
+.bootstrap-switch-off > .bootstrap-switch-container { width: 110px}
+#slider > a > label{margin-top: 5px;}
+.employee_checklist .item_body {margin-left: 0;}
+.employee_checklist h5 {}
+.checklist_task { margin-bottom: 10px;}
+.employee_checklist .tlabel {display: inline-block; min-width: 150px;}
+.employee_checklist .task_subject {font-weight: bold;}
+.employee_checklist .task_notes {font-size: 0.9em;}
+.modal .chzn-container .chzn-results {max-height: 150px;}
+.status.important {color: red;}
+.status.warning {color: #FAB750;}
+.status.success {color: #53A93F;}
+.status.inverse {color: #333333;}
+.fc{padding-top: 10px;}
+.fc-header-title h2 {
+        margin-top: -8px;
+        white-space: nowrap;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+.survey-style{margin:0 0 15px 0;list-style-type:none;border-bottom:1px solid #EEE}
+.survey-style li{padding:7px 10px;border-bottom:1px dotted #EEE}
+.survey-style li a{color:#222;text-decoration:none}
+.lead-16 {font-size: 16px;font-weight: 200;line-height: 20px;}
+.btn-group.open .dropdown-toggle.btn-primary {
+     background: #339933; 
+}
+
+.box.box-bordered.box-color .box-content, .box.box-bordered.box-color .box-title {
+    border-color: #339933;
+}
+.box.box-bordered .box-title {
+    border: 2px solid #ddd;
+}
+.box.box-color .box-title {
+    background: #339933;
+}
