@@ -47,8 +47,8 @@
                                     <td><?= date('d-M-Y', strtotime($batch->batch_date)); ?></td>
                                     <td><?= date('h:i:A', strtotime($batch->batch_time)); ?></td>
                                     <td>
-                                        <a href="/print/<?= $batch->batch_id; ?>">
-                                            <i class="icons icon-print"></i> Print Card</a>
+                                        <a href="/view_pins/<?= $batch->batch_id; ?>">
+                                            <i class="icons icon-print"></i> View Pins</a>
                                     </td>
                                 </tr>
                     <?php endforeach; ?>
@@ -56,22 +56,10 @@
                     </table>
                     <?php
                 else:
-                    echo show_no_data('No user has been added');
+                    echo show_no_data('No Batch has been uploaded.');
                 endif;
                 ?>
             </div>
         </div>
     </div>
 </div>
-
-<?php include '_new_user_modal.php'; ?>
-
-<!-- Assign market modal -->
-<div class="modal hide fade" id="modal_assign_market" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" >
-
-</div>
-
-<div class="modal hide fade" id="modal_edit_user" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" ></div>
-
-
-<script src="/js/users.js"></script>

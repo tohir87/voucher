@@ -206,7 +206,7 @@ class User_controller extends CI_Controller {
                 notify('error', "Upload could not be completed, please try again");
             }
             
-            redirect(site_url('/upload'));
+            redirect(site_url('/batches'));
         }
 
         $data = [
@@ -224,6 +224,43 @@ class User_controller extends CI_Controller {
         ];
         
         $this->user_nav_lib->run_page('user/batches', $pageData, 'Batches' . BUSINESS_NAME);
+    }
+    
+    public function view_pins($batch_id) {
+        $this->user_auth_lib->check_login();
+        $pageData = [
+            'pins' => $this->basic_model->fetch_all_records('pins', ['batch_id' => $batch_id]),
+            'batch_id' => $batch_id
+        ];
+        
+        $this->user_nav_lib->run_page('user/view_pins', $pageData, 'Pins In Batch' . BUSINESS_NAME);
+    }
+    
+    public function print_card($batch_id, $count) {
+        $this->user_auth_lib->check_login();
+        $pageData = [
+//            'pins' => $this->basic_model->fetch_all_records('pins', ['batch_id' => $batch_id]),
+            'pins' => $this->pin_lib->fetch_pins($batch_id),
+            'batch_id' => $batch_id,
+            'count' => $count,
+        ];
+        
+        $this->load->view('reports/template_10', $pageData);
+//        
+//        $buffer = $this->load->view('reports/template_10', $pageData, true);
+//
+//        $hash_key = time();
+//        $file_name = $hash_key . "_" . BUSINESS_NAME . "_" . "event_registration";
+//
+//        $this->load->library('pdf_lib');
+//        $this->pdf_lib->output_pdf(
+//                array(
+//                    'header' => "{$batch_id}",
+////                    'orientation' => 'P',
+////                    'footer' => 'Copyright @ ' . date('Y') . '. Event Registration. | {PAGENO} | ' . BUSINESS_NAME,
+//                    'html' => $buffer,
+//                    'file_name' => $file_name
+//        ));
     }
 
 }

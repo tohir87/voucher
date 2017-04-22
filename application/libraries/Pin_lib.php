@@ -33,6 +33,7 @@ class Pin_lib extends Lib {
         // create batch
         $this->db->insert('batches', [
             'provider_id' => $data['provider_id'],
+            'amount' => $data['amount'],
             'batch_date' => date('Y-m-d'),
             'batch_time' => date('H:i:s'),
         ]);
@@ -62,6 +63,15 @@ class Pin_lib extends Lib {
         $this->db->trans_complete();
 
         return $this->db->trans_status() ? TRUE : FALSE;
+    }
+    
+    public function fetch_pins($batch_id) {
+        return $this->db->select('p.*, b.amount, pr.provider_name, pr.provider_acronym')
+                ->from('pins p')
+                ->join('batches b', 'b.batch_id=p.batch_id')
+                ->join('providers pr', 'pr.provider_id=b.provider_id')
+                ->where('p.batch_id', $batch_id)
+                ->get()->result();
     }
 
 }

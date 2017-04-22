@@ -37,7 +37,7 @@ $showSideBar = FALSE;
 
     <div class="container-fluid" id="content">
         
-        <div id="main" <?php if ($this->uri->segment(2) == 'dashboard'): ?> style="background-image: url('/img/ctmadmin-bg_01.jpg'); background-repeat: repeat-y; background-position: center " <?php endif; ?>>
+        <div id="main">
             <div class="container-fluid">
                 <div class="row-fluid">
                     <div class="<?php echo $content_vlass; ?>">

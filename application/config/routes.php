@@ -58,6 +58,8 @@ $route['login']  = 'user/user_controller/login';
 $route['logout']  = 'user/user_controller/logout';
 $route['upload']  = 'user/user_controller/upload';
 $route['batches']  = 'user/user_controller/batches';
+$route['view_pins/(:num)']  = 'user/user_controller/view_pins/$1';
+$route['print/(:num)/(:num)']  = 'user/user_controller/print_card/$1/$2';
 
 
 $route['forgot_password'] = 'user/user_controller/forgot_password';

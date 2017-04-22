@@ -42,9 +42,15 @@
                         </div>
                     </div>
                     <div class="control-group">
+                        <label class="control-label">Amount</label>
+                        <div class="controls">
+                            <input required type="text" name="amount" id="amount" placeholder="100" />
+                        </div>
+                    </div>
+                    <div class="control-group">
                         <label class="control-label">File</label>
                         <div class="controls">
-                            <input type="file" name="userfile" />
+                            <input required type="file" name="userfile" />
                         </div>
                     </div>
                     <div class="form-actions">
