@@ -96,10 +96,6 @@ if (!defined('BASEPATH'))
         </form>
     </div>
 
-
-    <script>
-        mixpanel.track("Subscribers login page");
-    </script>
 <!--    <div class="footer">
         <p>Powered by <a href="http://zendsolutions.com/" target="_blank">ZendSoft Solutions</a> &copy; <?php echo date('Y'); ?></p>
     </div>-->

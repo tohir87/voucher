@@ -26,7 +26,7 @@ class Subscription_controller extends CI_Controller {
         $this->load->model('setup/Subscription_model', 'sub_model');
         $this->load->model('setup/Advert_model', 'ads_model');
         $this->load->model('basic_model');
-        $this->load->library(['User_nav_lib', 'Product_lib', 'Mailer', 'mixpanel_lib']);
+        $this->load->library(['User_nav_lib', 'Product_lib', 'Mailer']);
     }
 
     public function index() {
@@ -38,7 +38,6 @@ class Subscription_controller extends CI_Controller {
             if (isset(request_post_data()['register_button'])) {
                 if ($this->sub_model->addSubscriber(request_post_data())) {
                     $post_data = request_post_data();
-                    $this->mixpanel_lib->track(['message' => "{$post_data['first_name']} {$post_data['last_name']} signed up", 'action' => 'Subscribe']);
                     notify('success', "Your account has been created successfully, Pls check your email to activate your account");
                 }
                 redirect(site_url('/register'));
@@ -111,13 +110,6 @@ class Subscription_controller extends CI_Controller {
                 $email_message = "Invalid email/password";
                 redirect(site_url('/register?$email_message=Invalid email/password'));
             } else {
-                $this->mixpanel_lib->setPeople($this->user_auth_lib->get('user_id'), array(
-                    '$first_name' => $this->user_auth_lib->get('first_name'),
-                    '$last_name' => $this->user_auth_lib->get('last_name'),
-                    '$email' => $this->user_auth_lib->get('email')
-                ));
-
-                $this->mixpanel_lib->track(['message' => "Subscriber ({$this->user_auth_lib->get('first_name')} {$this->user_auth_lib->get('last_name')}) login successfully", 'action' => 'Login']);
 
                 redirect('subscriber/dashboard');
             }
@@ -136,7 +128,6 @@ class Subscription_controller extends CI_Controller {
     }
 
     public function logout() {
-        $this->mixpanel_lib->track(['message' => "Subscriber ({$this->user_auth_lib->get('first_name')} {$this->user_auth_lib->get('last_name')}) logout successfully", 'action' => 'Logout']);
         $this->user_auth_lib->logout();
         redirect(site_url('/register'));
     }

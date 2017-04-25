@@ -59,9 +59,6 @@ if (!defined('BASEPATH'))
             
         </div>
         <hr style=" margin-top: 50px;">
-        <script>
-            mixpanel.track("Subscribers activation page");
-        </script>
         <div class="footer">
             <p>Powered by <a href="http://zendsolutions.com/" target="_blank">ZendSoft Solutions</a> &copy; <?php echo date('Y'); ?></p>
         </div>
